@@ -20,7 +20,7 @@ defmodule ApiWeb.Router do
 
   scope "/", ApiWeb do
     pipe_through :spa
-    forward "/", ApiWeb.Plug.SPA
+    forward "/", Plug.SPA
   end
 
   scope "/swagger" do
