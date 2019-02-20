@@ -1,0 +1,51 @@
+# The directory Mix will write compiled artifacts to.
+/_build/
+
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
+
+# Ignore the directory Mix downloads your dependencies sources to.
+/deps/
+
+# Ignore where 3rd-party dependencies like ExDoc output generated docs.
+/doc/
+
+# Ignore .fetch files in case you like to edit your project deps locally.
+/.fetch
+
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
+
+# Ignore archive artifacts (built via "mix archive.build").
+*.ez
+/releases/
+/node_modules/
+
+# Ignore static artifacts
+/assets/node_modules
+
+# Since we are building assets from assets/,
+# Ignore priv/static.
+/priv/static/
+/priv/static/*/build/
+
+# Ignore logs
+npm-debug.log
+yarn-error.log
+
+# Ignore edeliver artifacts
+.deliver/*
+
+# Ignore geodb artifacts
+/server/geodb/*
+
+# Ignore backup sql files
+*.sql.bak
+
+# Ignore secret files
+*.secret.exs
+
+# Ignore IDE files
+.idea
+/.idea
+

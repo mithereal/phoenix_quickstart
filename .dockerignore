@@ -1,0 +1,28 @@
+.git
+.gitignore
+.idea
+.travis.yml
+
+# Elixir
+_build
+.elixir_ls
+deps
+apps/*/test
+
+# Project-specific
+resources
+dev
+priv
+
+# Docker
+.dockerignore
+Dockerfile
+
+# Secrets
+apps/*/priv/secrets/*
+!apps/*/priv/secrets/.keep
+
+# File types
+tmp
+erl_crash.dump
+*.ez
