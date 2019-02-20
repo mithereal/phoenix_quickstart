@@ -18,8 +18,8 @@ defmodule Platform.MixProject do
   defp deps do
     []
   end
-  
-    defp aliases do
+
+  defp aliases do
     [
       "ecto.setup": ["ecto.create", "ecto.migrate", "run apps/db/priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
@@ -27,5 +27,4 @@ defmodule Platform.MixProject do
       seed: ["run apps/db/priv/repo/seeds.exs"]
     ]
   end
-  
 end

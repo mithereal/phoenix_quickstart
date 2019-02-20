@@ -23,8 +23,7 @@ config :api, Api.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "c7k+W1VPLEfSifY/9EyQ9LCFLdODx16hWNpYbMsc5d5kAkg43ZRm9kXBcRDm3pZI",
   render_errors: [view: Api.ErrorView, accepts: ~w(json)],
-  pubsub: [name: Api.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Api.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -32,11 +31,13 @@ config :logger, :console,
   metadata: [:request_id]
 
 config :api, :phoenix_swagger,
-       swagger_files: %{
-         "priv/static/swagger.json" => [
-           router: Api.Router,     # phoenix routes will be converted to swagger paths
-           endpoint: Api.Endpoint  # (optional) endpoint config used to set host, port and https schemes.
-         ]
-       }
+  swagger_files: %{
+    "priv/static/swagger.json" => [
+      # phoenix routes will be converted to swagger paths
+      router: Api.Router,
+      # (optional) endpoint config used to set host, port and https schemes.
+      endpoint: Api.Endpoint
+    ]
+  }
 
-import_config "#{Mix.env}.exs"
+import_config "#{Mix.env()}.exs"

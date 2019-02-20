@@ -5,6 +5,8 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const outputDir = path.join(__dirname, "../priv/static/");
+
 module.exports = (env, options) => ({
   optimization: {
     minimizer: [
@@ -12,12 +14,10 @@ module.exports = (env, options) => ({
       new OptimizeCSSAssetsPlugin({})
     ]
   },
-  entry: {
-      './js/app.js': ['./js/app.js'].concat(glob.sync('./vendor/**/*.js'))
-  },
+    entry: './src/index.bs.js',
   output: {
     filename: 'app.js',
-    path: path.resolve(__dirname, '../priv/static/js')
+    path: outputDir
   },
   module: {
     rules: [
