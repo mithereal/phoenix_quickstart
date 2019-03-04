@@ -1,4 +1,4 @@
-defmodule Platform.Repo.Migrations.AddCalendarDateTimeType do
+defmodule DB.Repo.Migrations.AddCalendarDateTimeType do
   use Ecto.Migration
 
   def up do

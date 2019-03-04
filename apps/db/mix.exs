@@ -40,6 +40,7 @@ defmodule DB.Mixfile do
       {:postgrex, ">= 0.0.0"},
       {:ecto, "~> 2.1"},
       {:faker, "~> 0.11"},
+      {:kaur, "~> 1.1.0"},
       {:ecto_soft_delete, git: "git://github.com/elixir-twister/ecto_soft_delete.git"}
     ]
   end
