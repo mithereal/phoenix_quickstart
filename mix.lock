@@ -2,6 +2,7 @@
   "bamboo": {:git, "https://github.com/thoughtbot/bamboo.git", "fd118161747e1094055e6ccb7cf54962210ffa05", []},
   "base64url": {:hex, :base64url, "0.0.1", "36a90125f5948e3afd7be97662a1504b934dd5dac78451ca6e9abf85a10286be", [:rebar], [], "hexpm"},
   "bcrypt_elixir": {:hex, :bcrypt_elixir, "1.1.1", "6b5560e47a02196ce5f0ab3f1d8265db79a23868c137e973b27afef928ed8006", [:make, :mix], [{:elixir_make, "~> 0.4", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm"},
+  "bunt": {:hex, :bunt, "0.1.6", "5d95a6882f73f3b9969fdfd1953798046664e6f77ec4e486e6fafc7caad97c6f", [:mix], [], "hexpm"},
   "burnex": {:hex, :burnex, "1.1.1", "292206259d503ffaf51f13b07f5f9ffcb21a586fdddbdf885ac7a7727d1a910d", [:mix], [], "hexpm"},
   "certifi": {:hex, :certifi, "2.5.1", "867ce347f7c7d78563450a18a6a28a8090331e77fa02380b4a21962a65d36ee5", [:rebar3], [{:parse_trans, "~>3.3", [hex: :parse_trans, repo: "hexpm", optional: false]}], "hexpm"},
   "combine": {:hex, :combine, "0.10.0", "eff8224eeb56498a2af13011d142c5e7997a80c8f5b97c499f84c841032e429f", [:mix], [], "hexpm"},

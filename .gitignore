@@ -49,3 +49,5 @@ yarn-error.log
 .idea
 /.idea
 
+.elixir_ls
+/.elixir_ls
