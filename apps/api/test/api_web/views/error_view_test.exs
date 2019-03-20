@@ -12,4 +12,14 @@ defmodule ApiWeb.ErrorViewTest do
     assert render(ApiWeb.ErrorView, "500.json", []) ==
              %{errors: %{detail: "Internal Server Error"}}
   end
+
+  test "renders FORBIDDEN.json" do
+    assert render(ApiWeb.ErrorView, "FORBIDDEN.json", []) ==
+             %{errors: %{detail: "FORBIDDEN"}}
+  end
+
+  test "renders 401.json" do
+    assert render(ApiWeb.ErrorView, "401.json", []) ==
+             %{errors: %{detail: "Unauthorized"}}
+  end
 end
