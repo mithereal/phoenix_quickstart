@@ -12,4 +12,11 @@ config :bcrypt_elixir, :log_rounds, 4
 
 config :rollbax,
   environment: "test"
-  
+
+  config :core, Drm.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "",
+  database: "test",
+  hostname: "localhost",
+  pool: Ecto.Adapters.SQL.Sandbox
