@@ -12,3 +12,5 @@ mix new appname --sup
 
 to create a another phx umbrella app is recomended to use 
 ex. mix phx.new api --module Api --app api --no-ecto --no-html
+
+[![time tracker](https://wakatime.com/badge/github/mithereal/phoenix_quickstart.svg)](https://wakatime.com/badge/github/mithereal/phoenix_quickstart)
